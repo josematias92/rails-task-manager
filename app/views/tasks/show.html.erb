@@ -2,6 +2,8 @@
 
 <%= @task.details %>
 
-<br>
+<%= @task.completed %>
 
+<br>
+<%= link_to "Edita la tarea", edit_path %>
 <%= link_to "Regresa a la pagina de tareas", tasks_path %>
