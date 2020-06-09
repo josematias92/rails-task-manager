@@ -5,5 +5,11 @@
 <%= @task.completed %>
 
 <br>
+
 <%= link_to "Edita la tarea", edit_path %>
 <%= link_to "Regresa a la pagina de tareas", tasks_path %>
+
+<%= link_to "Delete #{@task.title}",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
